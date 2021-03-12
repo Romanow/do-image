@@ -7,5 +7,5 @@ for `/home/ansible/.ssh/authorized_keys` and enable password authentication.
 
 ```shell script
 export PERSONAL_DO_TOKEN=<token>
-packer build -var-file=variables.json template.json
+packer build -var-file=vars.pkrvars.hcl template.pkr.hcl
 ```
