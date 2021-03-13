@@ -42,7 +42,7 @@ build {
       "sleep 30",
       "sudo apt-get update",
       "sudo apt-get install unzip apt-transport-https htop -y",
-      "useradd --create-home --user-group --groups sudo --shell /bin/bash ansible",
+      "useradd --create-home --user-group --groups sudo --password '' --shell /bin/bash ansible",
       "passwd --expire ansible",
       "mkdir -p -m 0700 /home/ansible/.ssh",
       "sed -i 's/PasswordAuthentication no*/PasswordAuthentication yes/' /etc/ssh/sshd_config",
